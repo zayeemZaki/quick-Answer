@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Extension</title>
+    <style>
+        /* Ensure the pop-up has a consistent size */
+        html, body {
+            width: 600px; /* Adjust as needed */
+            height: 600px; /* Adjust as needed */
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background-color: #b2b2dd; 
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        textarea {
+            width: 80%;
+            height: 100px;
+            margin-bottom: 20px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            resize: none;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #response {
+            margin-top: 20px;
+            width: 80%;
+            text-align: center;
+            font-size: 16px;
+            color: #333;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Ask AI</h1>
+    <textarea id="user-input"></textarea>
+    <button id="submit">Submit</button>
+    <div id="response"></div>
+
+    <script src="prompt.js"></script>
+</body>
+</html>
