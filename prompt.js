@@ -12,7 +12,7 @@ document.getElementById("submit").addEventListener("click", () => {
     responseElement.textContent = "Loading...";
     submitButton.disabled = true;
 
-    const message = `Provide a concise answer in under 100 characters. If the answer involves a mathematical or scientific concept, include the formula first, followed by a brief explanation of the terms in the formula. For example, for the volume of a cube, respond as: "Volume = side³ (side = length of one edge).": ${input}`;
+    const message = `Provide a concise answer in under 100 characters. If the answer involves a mathematical or scientific concept, include the formula first, followed by a brief explanation of the terms in the formula.": ${input}`;
 
     chrome.runtime.sendMessage({ prompt: message }, (response) => {
         // Re-enable the submit button
